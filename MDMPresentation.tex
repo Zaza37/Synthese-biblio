@@ -1,12 +1,20 @@
+\section{Démarche d'approche de la thématique}
+
+N'étant pas, par notre formation et nos affinités, des personnes ayant une grande connaissance des problématiques de gestion de données d'entreprise au sein d'un SI, nous avons décidé d'adopter une démarche d'ingénieur "ingénu"  vis à vis du problème posé.\\
+Par cela, nous entendons avoir une démarche progressive et critique vis à vis du vaste problème qu'est la qualité des données au sein d'un SI. Ce sujet étant extrêmement vaste et mal défini, nous ne souhaitons pas nous fermer de portes dans notre raisonnement.\\
+De plus, nous souhaitons réellement avoir une approche qui permette de distinguer la réalité des intérêts technologiques des arguments commerciaux de bas étage, ces derniers étant plus que mis à contribution  compte tenu du battage médiatique effectué autour de la problématique de la qualité des données. Nous tâcherons de passer outre ces aspects.\\
+Ainsi, dans un premier temps, nous allons nous atteler à définir le domaine de la qualité des données, pour ensuite essayer d'effectuer un aperçu des approches possibles de la problématique de qualité des données, pour enfin déboucher sur le management des données de référence, son fonctionnement, son implémentation dans un SI d'entreprise et les différents challenges que ce type de service pose au sein d'une entreprise.\\
+De cette manière nous espérons fournir un aperçu complet et critique de cette technologie. 
+
 \section{Une réponse : le master data management}
 
 \subsection{Présentation du procédé et objectifs} 
 
-Le Master Data Management, traduit en français par Gestion des données de références, est une discipline des technologies de l'information ayant pour objectif de définir des concepts et méthodes visant à établir au sein d'un système d'information un schéma de base de données de références considérées commes fiables.\\
-Outre cela, le Master Data Management engloble aussi les disciplines d'intégration, d'exposition et d'utilisation de ces données de références au sein d'un système d'information d'entreprise, autant du coté opérationel que analytique.\\
-Ce procédé, permet de répondre en partie à la problématique de la qualité des données, en définissant un cadre de données dites de références, sures, et limite ainsi l'entropie des données intégrées au DataWarehouse, mais n'effectue pas à proprement parler de nettoyage des données, thème qui sera abordé dans la suite de la synthèse\\
+Le Master Data Management, traduit en français par Gestion des données de références, est une discipline des technologies de l'information ayant pour objectif de définir des concepts et méthodes visant à établir au sein d'un système d'information un schéma de base de données de références considérées comme fiables.\\
+Outre cela, le Master Data Management engloble aussi les disciplines d'intégration, d'exposition et d'utilisation de ces données de références au sein d'un système d'information d'entreprise, autant du coté opérationnel que analytique.\\
+Ce procédé, permet de répondre en partie à la problématique de la qualité des données, en définissant un cadre de données dites de références, sures, et limite ainsi l'entropie des données intégrées aux entrepôts de données, mais n'effectue pas à proprement parler de nettoyage des données, thème qui sera abordé dans la suite de la synthèse\\
 
-L'hypothèse de base est la suivante : \textit{"En assurant la qualité sur les données de références, on limite les erreurs lors de l'alimentation et l'exploitation de l'entrepot de données"}\\
+L'hypothèse de base est la suivante : \textit{"En assurant la qualité sur les données de références, on limite les erreurs lors de l'alimentation et l'exploitation de l'entrepôt de données"}\\
 
 \subsection{Données, de quoi parle t'on ?}
 
@@ -20,8 +28,7 @@ Des techniques de gestion de ces données existent, pour gérer ces données, no
 \subsubsection{Donnée Analytique}
 
 Les données analytiques sont générées à partir des bases de données transactionnelles et des bases de données de références.\\
-Il s'agit ici de traiter des données transactionelles sur le plus ou moins long termes, les traitements 
-et l'exploitation étants orientés en fonction de grands axes.\\
+Il s'agit ici de traiter des données transactionnelles sur le plus ou moins long terme, les traitements et l'exploitation étant orientés en fonction de grands axes.\\
 Deux principales approches se distinguent dans le monde de la business intelligence :
 \begin{itemize}
 \item Modélisation OLAP : Transformation des entrepôts de données d'entreprises en "hypercubes", permettant une exploitation facilitée (création de rapports, tableaux d'indicateurs...)
@@ -30,37 +37,51 @@ Deux principales approches se distinguent dans le monde de la business intellige
 
 \subsubsection{Données de références, késako ? }
 
-Les données de références sont un sous enssemble des données opérationelles, qui ont la praticularité de ne pas êtres issues d'opération de transactions. Ainsi elle possèdent une certaine constance dans le temps, qui n'est cependant pas une invariance, ces données pouvant être modifiées, complétées voire étendues. Ce sont ces mêmes données qui vont définir les axes d'exploration, d'exploitation et d'analyse.\\
+Les données de références sont un sous ensemble des données opérationnelles, considérées comme données de support pour les différentes opération d'alimentation ou  d'exploitation des données du SI.Elles possèdent une certaine constance dans le temps, qui n'est cependant pas une invariance, ces données pouvant être modifiées, complétées voire étendues. Ce sont ces mêmes données qui vont définir les axes d'exploration, d'exploitation et d'analyse.\\
 On différencie trois grandes catégories de données de références.
 
 \begin{itemize}
-\item Produit : Chaque entreprise possède une quantité de réféence produits, qui peuvent êtres transersaux à plusieurs secteurs de l'entreprise. Typiquement, un produit pourra être référencé par une documentation technique issue d'un bureau d'étude, une opération de vente  ou encore un référenciel fournisseur. L'unicité devra donc être assurée sur l'enssemble des entrées dans ce domaine.
-\item Tiers : De façon similaires, les "tiers" d'entreprises sont aussi considérés comme données de références. Par tiers nous entendons toutes personne ou entité ayant une intéraction possible avec le système d'information, typiquement un collaborateur, un client ou encore un fournisseur.
-\item Finance  : Les données de finances sont des informations critiques pour le fonctionnement de l'entreprise, obligatoire en ce qui concerne n'importe quel aspect légal et primoridal en ce qui concerne le pilotage des activités. Ces deux approches sont intégrées à la gestion de données de références.
+\item Produit : Chaque entreprise possède une quantité de référence produits, qui peuvent êtres transversaux à plusieurs secteurs de l'entreprise. Typiquement, un produit pourra être référencé par une documentation technique issue d'un bureau d'étude, une opération de vente  ou encore un référentiel fournisseur. L'unicité devra donc être assurée sur l'ensemble des entrées dans ce domaine.
+\item Tiers : De façon similaires, les "tiers" d'entreprises sont aussi considérés comme données de références. Par tiers nous entendons toutes personne ou entité ayant une interaction possible avec le système d'information, typiquement un collaborateur, un client ou encore un fournisseur.
+\item Finance  : Les données de finances sont des informations critiques pour le fonctionnement de l'entreprise, obligatoire en ce qui concerne n'importe quel aspect légal et primordial en ce qui concerne le pilotage des activités. Ces deux approches sont intégrées à la gestion de données de références.
 \end{itemize}
+
+Une question demeure en suspends... Quand une donnée normale peut être considérée comme donnée de référence ?\\
+En effet, la simple différenciation basée sur le fait qu'une donnée est transactionnelle ou non, peut dans certains cas se révéler mise en défaut.\\
+Prenons pour exemple une opération de vente du produit P1 à Mr M enregistrée par une application opérationnelle, cela se traduit par une entrée dans la table vente de l'entrepôt en relation avec les données de références produit...\\
+Maintenant, est-il possible de considérer le fait que l'acheteur constitue en lui même une donnée de référence ? Mieux encore, la quantité de produit P1 vendue à ce client peut à son tour être considéré comme une donnée de référence...\\
+Cet exemple met en évidence que la frontière entre une donnée de référence ou une donnée standard n'est pas clairement définie aux yeux de tous. Clairement, en suivant la logique précédente, la totalité de l'entrepôt de données de l'entreprise peut être considéré comme donnée de référence.\\
+Plusieurs pistes pour répondre à cette question : \\
+
+\begin{itemize}
+\item Donnée de support pour l'alimentation et l'exploitation de l'entrepôt de données de l'entreprise. Dimensions d'analyse lors de l'exploitation en OLAP par exemple.
+\item Objets métiers partagés entre plusieurs applications de l'entreprise
+\end{itemize}
+
+%TODO, voir pour creuser la question de de la définiton d'une donnée de référence
 
 \subsubsection{Pourquoi définir un parc de données de références de qualité ?}
 
-Comme expliqué auparavant, les données de références au sein d'un système d'information servent d'axes d'exploitation et d'analyse. Ainsi chaque opération effectuée au sein de ce dernier est obligatoirement rattachée à une ou plusieurs données de référence. Si celles-ci sont corrompues, fausses, non unifiées, le risque d'augmentation de l'entropie au sein du data warehouse s'en trouve décuplé.\\
-Par exemple, dans un repère orthogonal de dimension 3, caractérisé par les axes (x,y,z), positionner un point aux coordonées (1,2,3) est quelque chose de relativement aisé, si et seulement si les valeurs 1,2 et 3 des axes sont garanties comme unique.
-Emettons alors l'hypothèse que non, les valeurs présentes ne sont pas uniques... La question de l'insertion d'un point aux coordonées (1,2,3) se révelle alors beaucoup plus complexe, quelle valeur choisir ? \\ 
+Comme expliqué auparavant, les données de références au sein d'un système d'information servent d'axes d'exploitation et d'analyse. Ainsi chaque opération effectuée au sein de ce dernier est obligatoirement rattachée à une ou plusieurs données de référence. Si celles-ci sont corrompues, fausses, non unifiées, le risque d'augmentation de l'entropie au sein de l'entrepôt s'en trouve décuplé.\\
+Par exemple, dans un repère orthogonal de dimension 3, caractérisé par les axes (x,y,z), positionner un point aux coordonnées (1,2,3) est quelque chose de relativement aisé, si et seulement si les valeurs 1,2 et 3 des axes sont garanties comme unique.
+Émettons alors l'hypothèse que non, les valeurs présentes ne sont pas uniques... La question de l'insertion d'un point aux coordonnées (1,2,3) se révèle alors beaucoup plus complexe, quelle valeur choisir ? \\ 
 Nous nous retrouverions automatiquement en face d'un parc de n valeurs possédant toutes les caractéristiques (1,2,3) ... différentes !\\
 Autre chose, recherchons maintenant tout les points résolvant la condition y = 2, ce qui peut s'apparenter à la recherche de caractéristique commune pour des entrées produit dans le cas réel.
 La encore, si "2 possède plusieurs valeurs" dans le repère, la tâche de regroupement s'avère encore plus complexe.\\
-Imaginez les risques, sur une base de données opérationelles, avec un nombre de tuples extrêmement grand ?\\
+Imaginez les risques, sur une base de données opérationnelles, avec un nombre de tuples extrêmement grand ?\\
 
 \subsection{Positionnement au sein du SI de l'entreprise}
 
 \subsubsection{ Un peu d'histoire...}
 
-Historiquement, l'âge (pas tant) de pierre (que ça) du système d'information, chaque application opérationelle possédait son propre SGBD dédié à l'application... Celle-ci ne possédait que les données qui lui étaient utiles, que ce soit de référence, ou de transaction.\\
-Le problème de la propagation des mises à jour est alors posé, car laissé à la responsabilité de l'opérateur, et comme le dit l'adage " La seule source d'erreur possible dans un ordinateur se trouve entre la chaise et le clavier !".\\
-La continuité logique des choses est donc d'essayer de "faire communiquer" les différents SGBDs entre eux... Vient donc la problématique de l'intégration n-carrée : chaque application est raccordée directement aux multiples bases de donnée qu'elle utilise, sans réel moyen de controle de la mise à jour de ces dernières... Fort risque de corruption lors de la propagation de données, de création de doublons sur certaines entrées et aucune trace des modifications portées. \\
-Ce système s'est donc révélé catastrophique en terme de maintenance et de qualité des données, mais le problème avait au moins le mérite d'être identifié : il faut contrôler et uniformiser les modes de communication entre les différentes bases de données\\
+Historiquement, l'âge (pas tant) de pierre (que ça) du système d'information, chaque application opérationnelle possédait son propre SGBD dédié à l'application... Celle-ci ne possédait que les données qui lui étaient utiles, que ce soit de référence, ou de simple transaction.\\
+Le problème de la propagation des mises à jour des données est alors posé, car laissé à la responsabilité de l'opérateur, et comme le dit l'adage \textit{" La seule source d'erreur possible dans un ordinateur se trouve entre la chaise et le clavier !"}.\\
+La continuité logique des choses est donc d'essayer de "faire communiquer" les différents SGBDs entre eux... Vient donc la problématique de l'intégration n-carrée : chaque application est raccordée directement aux multiples bases de donnée qu'elle utilise, sans réel moyen de contrôle de la mise à jour de ces dernières... Fort risque de corruption lors de la propagation de données, de création de doublons sur certaines entrées et aucune trace des modifications portées. \\
+Ce système s'est donc révélé catastrophique en terme de maintenance et de qualité des données, mais il avait au moins le mérite d'avoir permis d'identifier une solution possible à la propagation des données au sein d'un SI: il faut contrôler et uniformiser les modes de communication entre les différentes bases de données\\
 
 \subsubsection{ EAI : Intégration d'application opérationnelles dans le SI d'entreprise}
 
-Compte-tenu des expériences décrites précédemment, les développeurs ont orienté la démarche vers la création d'un bus commun de communication entre les différentes  entités du système d'information. Ainsi ce service fourni sera en charge de l'historisation et du transit des données de l'entreprise le tout de façon générique, moyennant le développement de services "connecteurs" entre les applications et le système de communication, appelé Enterprise Service Bus, ou ESB.\\
+Compte-tenu des expériences décrites précédemment, les développeurs ont orienté la démarche vers la création d'un bus commun de communication entre les différentes  entités du système d'information. Ainsi ce service fourni sera en charge de l'archivage et du transit des données de l'entreprise le tout de façon générique, moyennant le développement de services "connecteurs" entre les applications et le système de communication, appelé Entreprise Service Bus, ou ESB.\\
 
 \begin{itemize}
 
@@ -78,7 +99,6 @@ comme successions de services. En ce qui concerne le MDM, il ne s'agit pas de se
 \end{itemize}
 
 \subsubsection{Limites du modèle EAI \& SOA}
-
 
 \subsection{Fonctionnement du MDM dans un système d'information d'entreprise}
 
