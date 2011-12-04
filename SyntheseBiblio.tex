@@ -1,14 +1,12 @@
 \documentclass[a4paper]{article}
+\input{nation}
 
 \usepackage{hyperref}
 \hypersetup{
 colorlinks=false, % bool: Liens colorés
 pdfborder={0 0 0} % Ne pas encadrer les liens
 }
-\usepackage[utf8]{inputenc}
-\usepackage[francais]{babel}
-\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
-\usepackage{graphicx}
+
 \usepackage[final]{pdfpages}
 \usepackage{rotating}
 \usepackage{eurosym}
@@ -16,20 +14,25 @@ pdfborder={0 0 0} % Ne pas encadrer les liens
 \usepackage{float}
 \usepackage{color}
 \usepackage{colortbl}
+\usepackage{array}
+\usepackage[printonlyused]{acronym}
+\usepackage{url}
+
 % définir les commandes ici
-\newcommand{\titlecolor}[1]{\textcolor{blue}{\section{#1}}}
 
 % s'il y a beaucoup de commandes et de packages à inclure n'h&ésitez pas
 % à mettre tout ça dans un fichier include.tex et l'inclure
 % \input{include.tex}
 
+\lhead{Synthèse bibliographique}
+\rhead{\includegraphics [width=1.5cm]{insa-couleur.jpg}}
+\rfoot{\thepage\ de \pageref{LastPage}}
 
 
 
 \begin{document}
-\title{Synthèse bibliographique : Nettoyage des données en présence de données de références}
-
-\author{Elisa ABIDH, Julien LEVESY, Armand ROSSIUS}
+\title{Nettoyage des données en présence de données de référence}
+\author{Elisa ABIDH, Julien LEVESY,Armand ROSSIUS}
 
 %------------------------------------- Page de titre
 \maketitle
@@ -49,11 +52,22 @@ pdfborder={0 0 0} % Ne pas encadrer les liens
 \tableofcontents
 \newpage
 %----------------------------------------------- Plan
-
-\input{Enjeu.tex}
+\input{Introduction.tex}
+\input{Demarche.tex}
 \input{MDMPresentation.tex}
-
-
-
+\input{PlaceMDM.tex}
+%\input{Solutions.tex}
+%\input{Systeme.tex}
+%\input{datacleaning.tex}
+\input{Challenges.tex}
+\input{Conclusion.tex}
+\input{Bibliographie.tex}
+%\newpage
+%\begin{figure}[H]
+%\begin{center}
+% \includegraphics[scale=0.2]{DiagrameSOAPdc4.png}
+%  \caption{Protocole de connexion}
+%\end{center}  
+%\end{figure}
 
 \end{document}
