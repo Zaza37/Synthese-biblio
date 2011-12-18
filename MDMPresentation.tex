@@ -102,35 +102,73 @@ L'architecture basique d'un système de M.D.M. est composée de 6 principaux blo
 
 \begin{itemize}
 
-\item{La gestion du cycle de vie}
+\item[La gestion du cycle de vie : ]
 Ce module permet définir et implémenter tous les processus, rôles et responsabilités liés à la modification, création ou suppression de données.
 
-\item{L'administration}
+\item[L'administration : ]
 Ce module se charge de la gestion des différents acteurs, et de leurs droits d'accès concernant les données.
 
-\item{Le stockage}
+\item[Le stockage : ]
 Cette partie concerna la manière dont sont stockées les données et les références entre-elles.
 
-\item{La gestion des méta-données}
+\item[La gestion des méta-données : ]
 Ce module se charge de la gestion de l'ensemble des données concernant les données de références (les méta-données), comme par exemple les dates de dernières modification, etc...
 
-\item{La gestion de l'accès aux données}
+\item[La gestion de l'accès aux données : ]
 Ce module permet de définir tout ce qui concerne l'accès au données. Cela comprend les interfaces d'accès aux données, mais aussi de création, suppression et modification de celles-ci. Il est aussi en charge des protocoles de transmission des données, ainsi que de la politique d'accès aux données (push, pull...).
 
-\item{Les règles directrices}
+\item[Les règles directrices : ]
 Ces règles directrices assurent la conformité du système avec des règles de base (format des données, attribut d'un donnée indispensable ou facultatif). Ce sont des règles logiques permettant d'assurer la qualité des données selon un modèle adapté à l'entreprise. Ces règles sont implémentées par le biais de routines permettant de contrôler la conformité des informations.
 
 \end{itemize}
 
-\subsubsection{Le processus de Master Data Management}
+\subsubsection{Les processus du Master Data Management}
+
+Maintenant que nous avons vu les principaux modules de l'architecture d'une solution de Master Data Management, voyons quels sont les processus indispensables qu'un système de M.D.M. doit implémenter.
+
+\begin{itemize}
+
+\item[Profiler : ]
+Chaque source de données de références que l'on souhaite intégrer au système de Master Data Management doit être vérifier, et notamment en terme de qualité. L'objectif du Master Data Management est d'améliorer la qualité des données en utilisant une base que l'on considère comme étant saine. Il est donc indispensable que la base que l'on utilise soit effectivement saine, et il faut donc s'assurer que chaque source utilisée pour créer la base de référence est de qualité. C'est l'objectif de ce processus, qui s'assure de la complétude des données, vérifie que les données sont bien dans la plage qui leur correspond, etc...
+
+\item[Consolider : ]
+La consolidation est la partie la plus important du Master Data Management. En effet, l'objectif du Master Data Management étant de fournir une base de données uniques pour de multiples applications, la consolidation est donc l'élément central du M.D.M.
+
+\item[Gouverner et nettoyer : ]
+Le nettoyage de données a pour but la standardisation des données, la correction d'erreur, l'établissement de la correspondance de données, la suppression de doublons. Gouverner les données consiste à établir des règles sur les données, sur la qualité des données, et à définir des politiques d'accès aux données.
+
+\item[Partager : ]
+Il est indispensable de combiner le système de M.D.M. à une organisation du S.I. de type S.O.A. afin de faire profiter les processus métiers des données de référence.
+
+\item[Exploiter : ]
+L'objectif est d'exploiter les données collectées dans le M.D.M. L'objectif est de maintenir une "vue à 360°" et une référence croisée avec les bases du Datawarehouse.
+
+
+\end{itemize}
 
 \subsection{Gestion spécifique selon le type de la donnée de référence et impact}
 
-\subsubsection{tiers}
+Les données métiers pouvant se révéler complexes, notamment à exploiter, la majeure partie des systèmes de Master Data Management se spécialise dans la gestion d'un type particulier de données de références.
 
-\subsubsection{produit}
+\subsubsection{Tiers}
 
-\subsubsection{financière}
+Les système des M.D.M. spécialisés dans la gestion des données référentielles "Tiers" sont les M.D.M. traitant plus particulièrement les données liées à des personnes physiques/morales (personnel, client, fournisseur, etc...).
+La principale difficulté liées à ces systèmes de M.D.M. est la consolidation. Il est extrêmement important d'être capable de rapprocher plusieurs informations provenant de sources diverses, de les enrichir, et de contrôler leur validité.
 
+\subsubsection{Produit}
 
+Les systèmes de M.D.M spécialisés dans la gestion des données référentielles "Produit" sont principalement utilisés dans la grande distribution (pour les processus de référencement) et dans l'industrie (pour les processus de développement de produit).
+La principale difficulté liées à ces systèmes de M.D.M. est la notion de gestion collaborative des données de références. En effet, la fiche produit est mise à jour à partir de nombreux acteurs et de nombreux métiers. Cela nécessite une coordination fine qu'il n'est pas à négliger.
 
+\subsubsection{Financière}
+
+Les systèmes de M.D.M spécialisés dans la gestion des données référentielles "Financières" sont utilisées pour deux raisons principales :
+
+\begin{itemize}
+
+\item[l'établissement des comptes annuels]
+\item[les rapports de gestion]
+
+\end{itemize}
+
+Les données financières sont souvent modélisées sous forme hiérarchique, c'est pourquoi de nombreuses solution se sont spécialisées dans ce domaine en utilisant des modèles de données hiérarchiques plutôt que les modèles de données traditionnels.
