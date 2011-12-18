@@ -9,12 +9,12 @@ A la différence d'un "simple" nettoyage instancié une ou plusieurs fois dans l
 
 L'hypothèse de base est la suivante : \textit{"En assurant la qualité sur les données de références, on limite les erreurs lors de l'alimentation et l'exploitation de l'entrepôt de données"}\\
 
-\subsection{Données, de quoi parle t'on ?}
+\subsection{Données, de quoi parle-t-on ?}
 
 \subsubsection{Donnée Transactionnelle}
 
 Chaque opération effectuée dans l'entreprise génère des données. Par exemple lors d'un achat
-les données générées sont (date de l'achat, qte produit acheté, montant transaction et cie...)
+les données générées sont (date de l'achat, quantité de produit acheté, montant transaction et cie...)
 Des bases de données basées sur de l'OLTP sont utilisées pour la gestion de ce genre de transactions.
 Des techniques de gestion de ces données existent, pour gérer ces données, notamment via le nettoyages par données de références, que nous aborderons dans la suite de cette synthèse.
 
@@ -30,7 +30,7 @@ Deux principales approches se distinguent dans le monde de la business intellige
 
 \subsubsection{Données de références, késako ? }
 
-Les données de références sont un sous ensemble des données opérationnelles, considérées comme données de support pour les différentes opération d'alimentation ou  d'exploitation des données du SI.Elles possèdent une certaine constance dans le temps, qui n'est cependant pas une invariance, ces données pouvant être modifiées, complétées voire étendues. Ce sont ces mêmes données qui vont définir les axes d'exploration, d'exploitation et d'analyse.\\
+Les données de références sont un sous ensemble des données opérationnelles, considérées comme données de support pour les différentes opération d'alimentation ou d'exploitation des données du SI.Elles possèdent une certaine constance dans le temps, qui n'est cependant pas une invariance, ces données pouvant être modifiées, complétées voire étendues. Ce sont ces mêmes données qui vont définir les axes d'exploration, d'exploitation et d'analyse.\\
 On différencie trois grandes catégories de données de références.
 
 \begin{itemize}
@@ -59,13 +59,70 @@ Comme expliqué auparavant, les données de références au sein d'un système d
 Par exemple, dans un repère orthogonal de dimension 3, caractérisé par les axes (x,y,z), positionner un point aux coordonnées (1,2,3) est quelque chose de relativement aisé, si et seulement si les valeurs 1,2 et 3 des axes sont garanties comme unique.
 Émettons alors l'hypothèse que non, les valeurs présentes ne sont pas uniques... La question de l'insertion d'un point aux coordonnées (1,2,3) se révèle alors beaucoup plus complexe, quelle valeur choisir ? \\ 
 Nous nous retrouverions automatiquement en face d'un parc de n valeurs possédant toutes les caractéristiques (1,2,3) ... différentes !\\
-Autre chose, recherchons maintenant tout les points résolvant la condition y = 2, ce qui peut s'apparenter à la recherche de caractéristique commune pour des entrées produit dans le cas réel.
+Autre chose, recherchons maintenant tous les points résolvant la condition y = 2, ce qui peut s'apparenter à la recherche de caractéristique commune pour des entrées produit dans le cas réel.
 La encore, si "2 possède plusieurs valeurs" dans le repère, la tâche de regroupement s'avère encore plus complexe.\\
 Imaginez les risques, sur une base de données opérationnelles, avec un nombre de tuples extrêmement grand ?\\
 
-\section{Fonctionnement du MDM dans un système d'information d'entreprise}
+\section{Fonctionnement du M.D.M. dans un système d'information d'entreprise}
 
 \subsection{Principe de fonctionnement}
+
+Nous l'avons vu, il est indispensable d'avoir un parc de données de références de qualité si l'on souhaite pouvoir exploiter correctement ces données dans les applications opérationnelles du S.I., et ainsi maintenir une certaine cohérence. Cette cohérence est également indispensable pour l'exploitation de ces données par le système de Business Intelligence de l'entreprise.\\
+
+\subsubsection{Fonctionnement de base d'un système de Master Data Management}
+
+Afin d'expliquer clairement le fonctionnement d'un système de Master Data Management, il convient de présenter le fonctionnement d'un S.I. sans la présence de M.D.M.
+Sans système de M.D.M, chaque application du système d'information possède une base de données qui lui est propre, et y accède de manière informelle.
+Les modifications, créations et suppression de données ne sont donc pas tracées. De nombreux problèmes de cohérence et de corruption de données sont présents de par la présence de sources de données multiples, de données incomplètes, erronées ou incohérentes.\\\\
+
+L'objectif du Master Data Management est de fournir une base de données unique et unifiée  pour l'ensemble des applications opérationnelles du S.I.\\
+Ainsi, l'ensemble des applications du S.I. partagent les mêmes informations, éliminant ainsi les problèmes de cohérence et de corruption des données.\\
+La maintenance des données ne s'effectue donc qu'à un seul endroit, et est donc simplifiée. Le système de M.D.M. distribue ensuite les données aux applications qui en ont besoins de manière régulière (via un système de pull). Il est également possible de mettre en place un système de push où l'information est directement demandée par l'application en ayant besoin.
+
+\subsubsection{Les conditions nécessaires au bon fonctionnement du système de M.D.M.}
+
+Afin de fournir des données de qualité, il est indispensable que le système de M.D.M. respecte trois règles de base :
+
+\begin{itemize}
+
+\item
+L'ensemble des données de référence du S.I. doit être stocké en un unique endroit.\\
+L'objectif de cette règle est tout d'abord d'empêcher la présence d'incohérence entre différentes données due à l'existence de plusieurs sources de données. La présence d'un source unique de données permet également de simplifier le coût opérationnel du à la maintenance des données.
+
+\item
+Le système est le maître des données. Grâce à cette règle, le système de Master Data Management permet un contrôle d'accès aux données. Il détermine quelle application peut accéder à quelle données, permettant de sécuriser les données, parfois sensibles, du système d'information.
+
+\item Les données du système de M.D.M sont des données de références. Cela permet d'empêcher des problèmes liés à la corruption de données, de données erronées, ou encore de données obsolètes. En effet, le système de M.D.M. est l'unique possesseur de l'information, et l'information qu'il possède est considérée comme étant sure, de qualité. Ainsi, en cas de litige, doute sur la validité ou l'intégrité d'une données, une simple vérification auprès du système de M.D.M permet de s'assurer de la validité des données, puisqu'il est la base de référence des données.
+
+\end{itemize}
+
+\subsubsection{Les principaux modules d'un système de M.D.M.}
+
+L'architecture basique d'un système de M.D.M. est composée de 6 principaux blocs :
+
+\begin{itemize}
+
+\item{La gestion du cycle de vie}
+Ce module permet définir et implémenter tous les processus, rôles et responsabilités liés à la modification, création ou suppression de données.
+
+\item{L'administration}
+Ce module se charge de la gestion des différents acteurs, et de leurs droits d'accès concernant les données.
+
+\item{Le stockage}
+Cette partie concerna la manière dont sont stockées les données et les références entre-elles.
+
+\item{La gestion des méta-données}
+Ce module se charge de la gestion de l'ensemble des données concernant les données de références (les méta-données), comme par exemple les dates de dernières modification, etc...
+
+\item{La gestion de l'accès aux données}
+Ce module permet de définir tout ce qui concerne l'accès au données. Cela comprend les interfaces d'accès aux données, mais aussi de création, suppression et modification de celles-ci. Il est aussi en charge des protocoles de transmission des données, ainsi que de la politique d'accès aux données (push, pull...).
+
+\item{Les règles directrices}
+Ces règles directrices assurent la conformité du système avec des règles de base (format des données, attribut d'un donnée indispensable ou facultatif). Ce sont des règles logiques permettant d'assurer la qualité des données selon un modèle adapté à l'entreprise. Ces règles sont implémentées par le biais de routines permettant de contrôler la conformité des informations.
+
+\end{itemize}
+
+\subsubsection{Le processus de Master Data Management}
 
 \subsection{Gestion spécifique selon le type de la donnée de référence et impact}
 
