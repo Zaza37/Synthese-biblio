@@ -17,6 +17,7 @@ pdfborder={0 0 0} % Ne pas encadrer les liens
 \usepackage{array}
 \usepackage[printonlyused]{acronym}
 \usepackage{url}
+\usepackage{natbib}
 
 % définir les commandes ici
 
@@ -60,6 +61,7 @@ pdfborder={0 0 0} % Ne pas encadrer les liens
 %\input{datacleaning.tex}
 \input{Challenges.tex}
 \input{Conclusion.tex}
+\newpage
 %\input{Bibliographie.tex}
 %\newpage
 %\begin{figure}[H]
@@ -68,6 +70,7 @@ pdfborder={0 0 0} % Ne pas encadrer les liens
 %  \caption{Protocole de connexion}
 %\end{center}  
 %\end{figure}
+\nocite{*}
 \bibliographystyle{plain}
 \bibliography{myrefs}
 \end{document}
