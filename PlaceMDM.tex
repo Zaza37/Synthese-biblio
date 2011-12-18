@@ -1,13 +1,13 @@
 \section{Positionnement au sein du SI de l'entreprise}
 
-\subsubsection{ Un peu d'histoire...}
+\subsection{ Un peu d'histoire...}
 
 Historiquement, à l'âge (pas tant) de pierre (que ça) du système d'information, chaque application opérationnelle possédait son propre SGBD dédié à l'application... Celle-ci ne possédait que les données qui lui étaient utiles, que ce soit de référence, ou de simple transaction.\\
 Le problème de la propagation des mises à jour des données est alors posé, car laissé à la responsabilité de l'opérateur, et comme le dit l'adage \textit{" La seule source d'erreur possible dans un ordinateur se trouve entre la chaise et le clavier !"}.\\
 La continuité logique des choses est donc d'essayer de "faire communiquer" les différents SGBDs entre eux... Vient donc la problématique de l'intégration n-carrée : chaque application est raccordée directement aux multiples bases de donnée qu'elle utilise, sans réel moyen de contrôle de la mise à jour de ces dernières... Fort risque de corruption lors de la propagation de données, de création de doublons sur certaines entrées et aucune trace des modifications portées. \\
 Ce système s'est donc révélé catastrophique en terme de maintenance et de qualité des données, mais il avait au moins le mérite d'avoir permis d'identifier une solution possible à la propagation des données au sein d'un SI: il faut contrôler et uniformiser les modes de communication entre les différentes bases de données\\
 
-\subsubsection{ EAI : Intégration d'application opérationnelles dans le SI d'entreprise}
+\subsection{ EAI : Intégration d'application opérationnelles dans le SI d'entreprise}
 
 Compte-tenu des expériences décrites précédemment, les développeurs ont orienté la démarche vers la création d'un bus commun de communication entre les différentes  entités du système d'information. Ainsi ce service fourni sera en charge de l'archivage et du transit des données de l'entreprise le tout de façon générique, moyennant le développement de services "connecteurs" entre les applications et le système de communication, appelé Entreprise Service Bus, ou ESB.\\
 
@@ -21,7 +21,7 @@ Compte-tenu des expériences décrites précédemment, les développeurs ont ori
 
 \end{itemize}
 
-\subsubsection{Limites du modèle EAI \& SOA}
+\subsection{Limites du modèle EAI \& SOA}
 
 Les architectures de gestion de systèmes d'informations présentées précédemment présentent l'avantage de faciliter l'intégration de nouveaux services à un système d'information d'entreprise, en s'occupant principalement de la problématique de communication / synchronisation des données entre plusieurs applications opérationnelles. En d'autres termes, ils sont conçus pour gérer et limiter les problèmes de fragmentation, mais ils ne les éliminent pas.\\
 
