@@ -1,0 +1,29 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Enjeux de la qualit\351 de donn\351es}{section.1}% 2
+\BOOKMARK [1][-]{section.2}{D\351marche}{}% 3
+\BOOKMARK [1][-]{section.3}{Une r\351ponse : le master data management}{}% 4
+\BOOKMARK [2][-]{subsection.3.1}{Pr\351sentation du proc\351d\351 et objectifs}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.2}{Donn\351es, de quoi parle-t-on ?}{section.3}% 6
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Donn\351e Transactionnelle}{subsection.3.2}% 7
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Donn\351e Analytique}{subsection.3.2}% 8
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Donn\351es de r\351f\351rences, k\351sako ? }{subsection.3.2}% 9
+\BOOKMARK [3][-]{subsubsection.3.2.4}{Pourquoi d\351finir un parc de donn\351es de r\351f\351rences de qualit\351 ?}{subsection.3.2}% 10
+\BOOKMARK [1][-]{section.4}{Fonctionnement du M.D.M. dans un syst\350me d'information d'entreprise}{}% 11
+\BOOKMARK [2][-]{subsection.4.1}{Principe de fonctionnement}{section.4}% 12
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Fonctionnement de base d'un syst\350me de Master Data Management}{subsection.4.1}% 13
+\BOOKMARK [3][-]{subsubsection.4.1.2}{Les conditions n\351cessaires au bon fonctionnement du syst\350me de M.D.M.}{subsection.4.1}% 14
+\BOOKMARK [3][-]{subsubsection.4.1.3}{Les principaux modules d'un syst\350me de M.D.M.}{subsection.4.1}% 15
+\BOOKMARK [3][-]{subsubsection.4.1.4}{Les processus du Master Data Management}{subsection.4.1}% 16
+\BOOKMARK [2][-]{subsection.4.2}{Gestion sp\351cifique selon le type de la donn\351e de r\351f\351rence et impact}{section.4}% 17
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Tiers}{subsection.4.2}% 18
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Produit}{subsection.4.2}% 19
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Financi\350re}{subsection.4.2}% 20
+\BOOKMARK [1][-]{section.5}{Positionnement au sein du SI de l'entreprise}{}% 21
+\BOOKMARK [2][-]{subsection.5.1}{ Un peu d'histoire...}{section.5}% 22
+\BOOKMARK [2][-]{subsection.5.2}{ EAI : Int\351gration d'application op\351rationnelle dans le SI d'entreprise}{section.5}% 23
+\BOOKMARK [2][-]{subsection.5.3}{Limites du mod\350le EAI \046 SOA}{section.5}% 24
+\BOOKMARK [1][-]{section.6}{Pr\351sentation des offres du march\351}{}% 25
+\BOOKMARK [2][-]{subsection.6.1}{Oracle}{section.6}% 26
+\BOOKMARK [2][-]{subsection.6.2}{IBM}{section.6}% 27
+\BOOKMARK [1][-]{section.7}{Les challenges}{}% 28
+\BOOKMARK [1][-]{section.8}{Conclusion}{}% 29

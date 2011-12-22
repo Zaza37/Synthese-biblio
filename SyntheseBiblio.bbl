@@ -1,0 +1,39 @@
+\begin{thebibliography}{1}
+
+\bibitem{Brasseur}
+BRASSEUR Christophe.
+\newblock {\em Data Management : qualité des données et compétitivité}.
+\newblock Paris : Hermès, 2005.
+
+\bibitem{DataCleaning}
+Hong Hai~Do Erhard~Rahm.
+\newblock Data cleaning: Problems and current approaches.
+\newblock \url
+  {http://wwwiti.cs.uni-magdeburg.de/iti_db/lehre/dw/paper/data_cleaning.pdf}.
+
+\bibitem{Interaction}
+Wenfei~Fa et~ali.
+\newblock Interaction between record matching and data repairing, 2011.
+
+\bibitem{DataQuality}
+Wenfei Fan.
+\newblock Dependencies revisited for improving data quality.
+\newblock \url
+  {http://www.lifl.fr/~bonifati/teaching/dq/lucidi/pods08Tutorial.pdf}.
+
+\bibitem{HowMDM}
+IBM.
+\newblock {\em An IBM White Paper : How Master Data Management Serves the
+  Business}, Novembre 2011.
+
+\bibitem{Discovering}
+Divesh~Srivastava Lukasz~Golab, Flip~Korn.
+\newblock Discovering pattern tableaux for data quality analysis: a case study.
+\newblock \url
+  {http://qdb2011.dia.uniroma3.it/participants/program/p47-GOLAB.PDF}.
+
+\bibitem{MDM}
+ORACLE.
+\newblock {\em An Oracle White Paper : Master Data Management}, Septembre 2011.
+
+\end{thebibliography}

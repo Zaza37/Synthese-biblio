@@ -1,0 +1,30 @@
+\select@language {french}
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Enjeux de la qualit\IeC {\'e} de donn\IeC {\'e}es}{3}{subsection.1.1}
+\contentsline {section}{\numberline {2}D\IeC {\'e}marche}{4}{section.2}
+\contentsline {section}{\numberline {3}Une r\IeC {\'e}ponse : le master data management}{4}{section.3}
+\contentsline {subsection}{\numberline {3.1}Pr\IeC {\'e}sentation du proc\IeC {\'e}d\IeC {\'e} et objectifs}{4}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Donn\IeC {\'e}es, de quoi parle-t-on ?}{5}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Donn\IeC {\'e}e Transactionnelle}{5}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Donn\IeC {\'e}e Analytique}{5}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}Donn\IeC {\'e}es de r\IeC {\'e}f\IeC {\'e}rences, k\IeC {\'e}sako ? }{5}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.4}Pourquoi d\IeC {\'e}finir un parc de donn\IeC {\'e}es de r\IeC {\'e}f\IeC {\'e}rences de qualit\IeC {\'e} ?}{6}{subsubsection.3.2.4}
+\contentsline {section}{\numberline {4}Fonctionnement du M.D.M. dans un syst\IeC {\`e}me d'information d'entreprise}{6}{section.4}
+\contentsline {subsection}{\numberline {4.1}Principe de fonctionnement}{6}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Fonctionnement de base d'un syst\IeC {\`e}me de Master Data Management}{6}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}Les conditions n\IeC {\'e}cessaires au bon fonctionnement du syst\IeC {\`e}me de M.D.M.}{7}{subsubsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.3}Les principaux modules d'un syst\IeC {\`e}me de M.D.M.}{7}{subsubsection.4.1.3}
+\contentsline {subsubsection}{\numberline {4.1.4}Les processus du Master Data Management}{7}{subsubsection.4.1.4}
+\contentsline {subsection}{\numberline {4.2}Gestion sp\IeC {\'e}cifique selon le type de la donn\IeC {\'e}e de r\IeC {\'e}f\IeC {\'e}rence et impact}{8}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Tiers}{8}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Produit}{8}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Financi\IeC {\`e}re}{8}{subsubsection.4.2.3}
+\contentsline {section}{\numberline {5}Positionnement au sein du SI de l'entreprise}{8}{section.5}
+\contentsline {subsection}{\numberline {5.1} Un peu d'histoire...}{8}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2} EAI : Int\IeC {\'e}gration d'application op\IeC {\'e}rationnelle dans le SI d'entreprise}{9}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Limites du mod\IeC {\`e}le EAI \& SOA}{9}{subsection.5.3}
+\contentsline {section}{\numberline {6}Pr\IeC {\'e}sentation des offres du march\IeC {\'e}}{9}{section.6}
+\contentsline {subsection}{\numberline {6.1}Oracle}{9}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}IBM}{9}{subsection.6.2}
+\contentsline {section}{\numberline {7}Les challenges}{9}{section.7}
+\contentsline {section}{\numberline {8}Conclusion}{9}{section.8}
