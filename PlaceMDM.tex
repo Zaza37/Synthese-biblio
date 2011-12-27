@@ -24,10 +24,61 @@ Compte-tenu des expériences décrites précédemment, les développeurs ont ori
 \subsection{Limites du modèle EAI \& SOA}
 
 Les architectures de gestion de systèmes d'informations présentées précédemment présentent l'avantage de faciliter l'intégration de nouveaux services à un système d'information d'entreprise, en s'occupant principalement de la problématique de communication / synchronisation des données entre plusieurs applications opérationnelles. En d'autres termes, ils sont conçus pour gérer et limiter les problèmes de fragmentation, mais ils ne les éliminent pas.\\
-
+Il convient alors de déployer une solution, autre que du nettoyage instanciel bête et méchant, en adoptant une approche plus intelligente, basée sur une vision au long terme. 
 
 \section{Présentation des offres du marché}
 
+Pour appuyer mon analyse, je me suis basé sur les études menées par un cabinet de consultant, intitulé the MDM Institute.
+
 \subsection{Oracle}
+
+La solution oracle tire parti de l'expérience de l'éditeur logiciel en terme d'outils pour l'intégration d'entreprise. En effet, ce dernier possède déjà un outil de service bus, d'entreposage des données et une multitude d'outils dédiés à l'intégration d'applications opérationnelles d'entreprise.\\
+Jouissant de la maitrise de ces couches fondamentales du SI et nécessaire  au déploiement d'un système de MDM performant, l'éditeur est donc en position de force pour fournir une solution efficace... avec sa "stack" d'intégration seulement ! \\
+L'éditeur pris le parti de d'approcher le domaine en segmentant ce dernier en domaines spécifiques, basés sur la toute relative catégorisation des données présentée un peu plus haut dans cette synthèse.\\
+On retrouve une offre logicielle par type de données de référence, Oracle prenant le parti de dire qu'en différenciant l'offre logicielle par domaine spécifique des données de référence, ils seront plus facilement apte à fournir des services de gestion des données de références plus ciblés et donc plus efficaces.\\
+Les grandes étapes de ce traitement sont donc :\\
+
+\begin{itemize}
+\item Govern
+\item Consolidate
+\item Cleanse
+\item Share
+\end{itemize}
+
+Reste à savoir comment gérer les données plus transversales, le prédicat de base donnant répondant à la définition de la donnée de référence par une réponse simpliste...\\
+
+\subsubsection{Tiers}
+
+Premier domaine des données de références, les données liées aux "tiers" de l'entreprise. Ici Oracle à  choisir de fournir une solution dédiée à la gestion des données client, différenciée des fournisseurs, ce qui est compréhensible les données client, sont différentes des fournisseurs et la collision de ces deux catégories d'entreprises est rarement possible.\\
+
+L'objectif de cette solution est de permettre la création d'une seule et unique vue d'un client ou du fournisseur en exploitant des sources hétérogènes au sein du SI, typiquement une application de ressources client, une application opérationnelle, de la gestion de fournisseurs, etc...\\
+
+\begin{itemize}
+\item Oracle Customer Hub
+\item Oracle Supplier Hub
+\end{itemize}
+
+\subsubsection{Produit}
+
+La gestion des références produit est un problème important au sein d'entreprises techniques, en partie lié au fait que c'est un domaine extrêmement transversal ( Ventes, Ingéniérie, Logistique ...) dans le contexte de l'entreprise. L'objectif la encore est de fournir une vue unique du produit en cours, peu importe le domaine dont est issu l'information.\\
+
+\begin{itemize}
+\item Oracle Product Hub
+\end{itemize}
+
+\subsubsection{Analytique}
+
+Troisième domaine, les données analytiques et financières. Ces deux domaines, extrêmements liés, représentent un challenge important au sein des solutions de master data management par le fait qu'elle ne sont pas dépendantes d'un modèle figé. Ainsi, concevoir une base de données de référence sur un modèle de données fortement instable est un problème extrêmement compliqué.\\
+L'éditeur fais ici le choix d'aborder le problème sous l'angle de la relation entre les données de références, d'où le nom du logiciel.\\
+
+\begin{itemize}
+\item  Oracle Hyperion Data Relationship Management
+\end{itemize}
+
+\subsubsection{Critique de la solution}
+
+La force de cette solution comparé à la concurrence réside évidemment dans la qualité des traitement et des modèles fournis, cependant les domaines sont trop orientés et le potentiel d'évolution des fonctionnalités, en parti bridé par le prédicat de la séparation des données de références, est vivement critiqué.\\
+Cette approche est efficace, mais pas viable sur le long terme\\ 
+Enfin, notons la relative fermeture de ce système, seules les solutions oracles sont intégrables, aucune hypothèse de SI hétérogène n'est envisageable.
 
 \subsection{IBM}
