@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  20 DEC 2011 11:11
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  27 DEC 2011 15:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -944,7 +944,7 @@ File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 \tf@toc=\write4
 \openout4 = `SyntheseBiblio.toc'.
 
- <insa-couleur.jpg, id=156, 425.4294pt x 227.6505pt>
+ <insa-couleur.jpg, id=196, 425.4294pt x 227.6505pt>
 File: insa-couleur.jpg Graphic file (type jpg)
 
 <use insa-couleur.jpg>
@@ -1057,11 +1057,57 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--13
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
+Underfull \hbox (badness 10000) in paragraph at lines 35--40
 
  []
 
-) (./Challenges.tex) (./Conclusion.tex)
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
+
+ []
+
+File: insa-couleur.jpg Graphic file (type jpg)
+<use insa-couleur.jpg>
+
+Package Fancyhdr Warning: \headheight is too small (14.0pt): 
+ Make it at least 26.43588pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--73
+
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 86--60
+
+ []
+
+File: insa-couleur.jpg Graphic file (type jpg)
+<use insa-couleur.jpg>
+
+Package Fancyhdr Warning: \headheight is too small (14.0pt): 
+ Make it at least 26.43588pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10] (./Challenges.tex) (./Conclusion.tex)
 File: insa-couleur.jpg Graphic file (type jpg)
  <use insa-couleur.jpg>
 
@@ -1070,7 +1116,7 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9] (./SyntheseBiblio.bbl) AED: lastpage setting LastPage
+[11] (./SyntheseBiblio.bbl) AED: lastpage setting LastPage
 File: insa-couleur.jpg Graphic file (type jpg)
 
 <use insa-couleur.jpg>
@@ -1080,7 +1126,7 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10]
+[12]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 76.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 76.
  (./SyntheseBiblio.aux)
@@ -1092,31 +1138,43 @@ Package rerunfilecheck Warning: File `SyntheseBiblio.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `SyntheseBiblio.out':
-(rerunfilecheck)             Before: 284D35D459E018B89C7FC1CFB1668611;2460
-(rerunfilecheck)             After:  1039A2DDE805141E8BCCC282362770AE;2459.
+(rerunfilecheck)             Before: 32815EF07D1E679EC549D6AC0DA1C3F0;3080
+(rerunfilecheck)             After:  99C7B05BF9BF05E3F2E5F2208EF8D9E2;2744.
  ) 
 Here is how much of TeX's memory you used:
- 10668 strings out of 493747
- 152532 string characters out of 3143546
- 261584 words of memory out of 3000000
- 13662 multiletter control sequences out of 15000+200000
+ 10686 strings out of 493747
+ 152866 string characters out of 3143546
+ 261587 words of memory out of 3000000
+ 13670 multiletter control sequences out of 15000+200000
  10919 words of font info for 30 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  43i,15n,43p,707b,569s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-}{/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/te
-xlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/tex
-live/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texl
-ive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texliv
-e/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive
-/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/
-2010/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/20
-10/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2010/texm
-f-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on SyntheseBiblio.pdf (10 pages, 329522 bytes).
+pdfTeX warning (dest): name{subsubsection.6.1.8} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.6.1.7} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.6.1.6} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.6.1.5} has been referenced but does n
+ot exist, replaced by a fixed one
+
+{/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{
+/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texl
+ive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texli
+ve/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texliv
+e/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/
+2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2
+010/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/20
+10/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2010
+/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2010/texmf-
+dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on SyntheseBiblio.pdf (12 pages, 335950 bytes).
 PDF statistics:
- 274 PDF objects out of 1000 (max. 8388607)
- 250 compressed objects within 3 object streams
- 53 named destinations out of 1000 (max. 500000)
- 238 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 326 PDF objects out of 1000 (max. 8388607)
+ 300 compressed objects within 3 object streams
+ 63 named destinations out of 1000 (max. 500000)
+ 302 words of extra memory for PDF output out of 10000 (max. 10000000)
 
