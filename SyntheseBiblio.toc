@@ -19,16 +19,18 @@
 \contentsline {subsubsection}{\numberline {4.2.1}Tiers}{8}{subsubsection.4.2.1}
 \contentsline {subsubsection}{\numberline {4.2.2}Produit}{8}{subsubsection.4.2.2}
 \contentsline {subsubsection}{\numberline {4.2.3}Financi\IeC {\`e}re}{8}{subsubsection.4.2.3}
-\contentsline {section}{\numberline {5}Positionnement au sein du SI de l'entreprise}{8}{section.5}
-\contentsline {subsection}{\numberline {5.1} Un peu d'histoire...}{8}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2} EAI : Int\IeC {\'e}gration d'application op\IeC {\'e}rationnelle dans le SI d'entreprise}{9}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Limites du mod\IeC {\`e}le EAI \& SOA}{9}{subsection.5.3}
-\contentsline {section}{\numberline {6}Pr\IeC {\'e}sentation des offres du march\IeC {\'e}}{9}{section.6}
-\contentsline {subsection}{\numberline {6.1}Oracle}{9}{subsection.6.1}
-\contentsline {subsubsection}{\numberline {6.1.1}Tiers}{10}{subsubsection.6.1.1}
-\contentsline {subsubsection}{\numberline {6.1.2}Produit}{10}{subsubsection.6.1.2}
-\contentsline {subsubsection}{\numberline {6.1.3}Analytique}{10}{subsubsection.6.1.3}
-\contentsline {subsubsection}{\numberline {6.1.4}Critique de la solution}{10}{subsubsection.6.1.4}
-\contentsline {subsection}{\numberline {6.2}IBM}{10}{subsection.6.2}
-\contentsline {section}{\numberline {7}Les challenges}{11}{section.7}
-\contentsline {section}{\numberline {8}Conclusion}{11}{section.8}
+\contentsline {subsection}{\numberline {4.3}Positionnement au sein du SI de l'entreprise}{8}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1} Un peu d'histoire...}{8}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2} EAI : Int\IeC {\'e}gration d'application op\IeC {\'e}rationnelle dans le SI d'entreprise}{9}{subsubsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3}Limites du mod\IeC {\`e}le EAI \& SOA}{9}{subsubsection.4.3.3}
+\contentsline {section}{\numberline {5}Pr\IeC {\'e}sentation des offres du march\IeC {\'e}}{9}{section.5}
+\contentsline {subsection}{\numberline {5.1}Oracle}{9}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Tiers}{10}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}Produit}{10}{subsubsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.3}Analytique}{10}{subsubsection.5.1.3}
+\contentsline {subsubsection}{\numberline {5.1.4}Critique de la solution}{10}{subsubsection.5.1.4}
+\contentsline {subsection}{\numberline {5.2}IBM}{10}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}One Data MDM}{11}{subsection.5.3}
+\contentsline {section}{\numberline {6}Le nettoyage de donn\IeC {\'e}es, data cleaning, data cleansing, data scrubbing}{11}{section.6}
+\contentsline {subsection}{\numberline {6.1}Recherche sur le sujet}{13}{subsection.6.1}
+\contentsline {section}{\numberline {7}Conclusion}{13}{section.7}
